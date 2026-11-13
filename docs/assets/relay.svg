@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 420" role="img" aria-label="Two phones connected over Wi-Fi, relaying a call">
+  <style>
+    .body   { fill: #0CB057; fill-opacity: .10; stroke: #0CB057; stroke-width: 3; }
+    .screen { fill: #0CB057; fill-opacity: .06; }
+    .sim    { fill: none; stroke: #0CB057; stroke-width: 2.4; }
+    .chip   { fill: #0CB057; fill-opacity: .55; }
+    .accent { fill: #0CB057; }
+    .dash   { stroke: #0CB057; stroke-width: 3; stroke-dasharray: 7 8; stroke-linecap: round; fill: none; }
+    .shadow { fill: #0e1412; fill-opacity: .07; }
+    @media (prefers-color-scheme: dark) {
+      .body   { fill-opacity: .16; }
+      .screen { fill-opacity: .10; }
+      .shadow { fill-opacity: .28; }
+    }
+  </style>
+
+  <ellipse class="shadow" cx="170" cy="374" rx="108" ry="13"/>
+  <ellipse class="shadow" cx="376" cy="374" rx="96" ry="12"/>
+
+  <!-- relay phone: holds the SIMs -->
+  <g transform="translate(70 82)">
+    <rect class="body" x="0" y="0" width="172" height="276" rx="30"/>
+    <rect class="screen" x="12" y="18" width="148" height="240" rx="19"/>
+    <rect class="accent" x="66" y="7" width="40" height="6" rx="3" opacity=".45"/>
+
+    <g transform="translate(30 46)">
+      <rect class="sim" x="0" y="0" width="58" height="44" rx="9"/>
+      <path class="accent" d="M14 6 v10 h-8" fill="none" stroke="#0CB057" stroke-width="2.4" stroke-linecap="round"/>
+      <rect class="chip" x="24" y="14" width="22" height="16" rx="3"/>
+      <path d="M31 14 v16 M24 22 h22" stroke="#fff" stroke-width="1.6" opacity=".85"/>
+    </g>
+    <g transform="translate(30 106)">
+      <rect class="sim" x="0" y="0" width="58" height="44" rx="9"/>
+      <path class="accent" d="M14 6 v10 h-8" fill="none" stroke="#0CB057" stroke-width="2.4" stroke-linecap="round"/>
+      <rect class="chip" x="24" y="14" width="22" height="16" rx="3"/>
+      <path d="M31 14 v16 M24 22 h22" stroke="#fff" stroke-width="1.6" opacity=".85"/>
+    </g>
+    <g transform="translate(30 166)" opacity=".55">
+      <rect class="sim" x="0" y="0" width="58" height="44" rx="9"/>
+      <rect class="chip" x="24" y="14" width="22" height="16" rx="3"/>
+      <path d="M31 14 v16 M24 22 h22" stroke="#fff" stroke-width="1.6" opacity=".85"/>
+    </g>
+
+    <g transform="translate(100 60)" class="accent">
+      <rect x="0" y="24" width="7" height="14" rx="3"/>
+      <rect x="12" y="16" width="7" height="22" rx="3"/>
+      <rect x="24" y="8" width="7" height="30" rx="3"/>
+    </g>
+  </g>
+
+  <!-- connection -->
+  <path class="dash" d="M248 220 H296"/>
+  <circle class="accent" cx="272" cy="220" r="21"/>
+  <path d="M263 213c4 5 10 5 14 0M266 218c2.6 3 7.4 3 10 0" stroke="#fff" stroke-width="2.4" stroke-linecap="round" fill="none"/>
+
+  <!-- your phone: receives the call -->
+  <g transform="translate(300 108)">
+    <rect class="body" x="0" y="0" width="164" height="252" rx="30"/>
+    <rect class="screen" x="12" y="18" width="140" height="216" rx="19"/>
+    <rect class="accent" x="62" y="7" width="40" height="6" rx="3" opacity=".45"/>
+
+    <circle cx="82" cy="86" r="30" fill="#0CB057" fill-opacity=".14"/>
+    <g transform="translate(64 68)">
+      <path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1l-2.3 2.2z"
+            fill="#0CB057" transform="translate(0 0) scale(1.55)"/>
+    </g>
+
+    <g transform="translate(40 148)" fill="#0CB057">
+      <rect x="0" y="14" width="14" height="26" rx="7" opacity=".35"/>
+      <rect x="22" y="8" width="14" height="32" rx="7" opacity=".55"/>
+      <rect x="44" y="0" width="14" height="40" rx="7" opacity=".8"/>
+      <rect x="66" y="0" width="14" height="40" rx="7"/>
+    </g>
+    <rect x="58" y="212" width="48" height="5" rx="2.5" fill="#0CB057" opacity=".4"/>
+  </g>
+</svg>

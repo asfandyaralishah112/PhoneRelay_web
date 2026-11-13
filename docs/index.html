@@ -3,31 +3,216 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>PhoneRelay</title>
-<style>
-  :root { color-scheme: light dark; }
-  body {
-    margin: 0 auto; padding: 2rem 1.25rem; max-width: 42rem;
-    font: 16px/1.6 -apple-system, "Segoe UI", Roboto, sans-serif;
-  }
-  h1 { font-size: 1.6rem; margin-bottom: .25rem; }
-  .lead { color: #666; margin-top: 0; }
-  ul { padding-left: 1.25rem; }
-  footer { margin-top: 2.5rem; color: #666; font-size: .9rem; }
-</style>
+<title>PhoneRelay - calls from your SIM, over Wi-Fi</title>
+<meta name="description" content="PhoneRelay relays calls from the SIM cards in your relay phone to your iPhone or Android phone over your own Wi-Fi. No Bluetooth pairing, no call forwarding, no call recording.">
+<meta name="theme-color" content="#0CB057">
+<link rel="icon" href="assets/phonerelay-icon.png">
+<link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
 
-<h1>PhoneRelay</h1>
-<p class="lead">A dialer that relays calls between two paired Android phones.</p>
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <img src="assets/phonerelay-icon.png" alt="">
+      <span>PhoneRelay</span>
+    </a>
+    <nav class="nav">
+      <a href="#how">How it works</a>
+      <a href="#plans">Plans</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy</a>
+      <a class="nav-btn" href="mailto:asfandyaralishah@rocketmail.com?subject=PhoneRelay">Get in touch</a>
+    </nav>
+  </div>
+</header>
 
-<ul>
-  <li><a href="headsets.html">Supported headsets</a></li>
-  <li><a href="account-deletion.html">Delete your account</a></li>
-</ul>
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Calls over Wi-Fi</span>
+      <h1>Your SIM, on the phone you actually carry.</h1>
+      <p class="lede">
+        PhoneRelay relays calls from the SIM cards in your relay phone to your
+        iPhone or Android phone, over your own Wi-Fi. No Bluetooth pairing, no
+        forwarding numbers, no call audio stored.
+      </p>
+      <div class="actions">
+        <a class="btn" href="#how">See how it works</a>
+        <a class="btn secondary" href="support.html">Talk to us</a>
+      </div>
+      <ul class="pills">
+        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>iPhone and Android</li>
+        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Multi-SIM picker</li>
+        <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Call audio never stored</li>
+      </ul>
+    </div>
+    <img class="hero-art" src="assets/relay.svg" alt="Two phones linked over Wi-Fi, relaying a call">
+  </div>
+</section>
 
-<footer>
-  Support: ahmad@mrecai.com
+<section class="alt" id="how">
+  <div class="wrap">
+    <div class="head">
+      <h2>Three steps, then it just works</h2>
+      <p>The relay phone holds the SIMs and stays on your network. Your phone does the dialling.</p>
+    </div>
+    <div class="tiles">
+      <div class="tile">
+        <div class="n">1</div>
+        <h3>Sign in with Google</h3>
+        <p>Your account carries the plan and binds the relay phone to you. The same
+        account works on iPhone and Android, one relay phone at a time.</p>
+      </div>
+      <div class="tile">
+        <div class="n">2</div>
+        <h3>Add your relay phone</h3>
+        <p>It sits on the same Wi-Fi with your SIM cards in it. Enter its address in
+        Settings once and PhoneRelay keeps the link open.</p>
+      </div>
+      <div class="tile">
+        <div class="n">3</div>
+        <h3>Dial as usual</h3>
+        <p>Pick which SIM should make the call, then dial from the keypad. The call
+        screen gives you mute, speaker, keypad and end.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="head">
+      <h2>Everything a phone call needs</h2>
+      <p>Built as a real dialer, not a forwarding trick.</p>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.2 11 11 0 0 0 3.6.6 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11 11 0 0 0 .6 3.6 1 1 0 0 1-.2 1z"/></svg></div>
+        <h3>A dialer, not a bridge</h3>
+        <p>Recents, contacts, favourites and a keypad - the screens you already
+        know, with calls carried by your relay phone.</p>
+      </div>
+      <div class="card">
+        <div class="icon"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="13" rx="2.5"/><path d="M8 6V4.5A1.5 1.5 0 0 1 9.5 3h5A1.5 1.5 0 0 1 16 4.5V6M3 11h18"/></svg></div>
+        <h3>Pick the SIM</h3>
+        <p>Two, three, as many as the relay phone holds. Choose the line for each
+        call from the keypad's SIM selector.</p>
+      </div>
+      <div class="card">
+        <div class="icon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="12" height="16" rx="2.5"/><rect x="17" y="9" width="4" height="11" rx="1.5"/><path d="M7 9h4"/></svg></div>
+        <h3>iPhone and Android</h3>
+        <p>The same account and plan on both. Sign in on the phone in your hand;
+        the relay phone stays where the signal is good.</p>
+      </div>
+      <div class="card">
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M2.5 9a15 15 0 0 1 19 0M5.5 12.5a10.5 10.5 0 0 1 13 0M8.5 16a6 6 0 0 1 7 0"/><circle cx="12" cy="19.5" r="1.2"/></svg></div>
+        <h3>Wi-Fi, not Bluetooth</h3>
+        <p>No pairing, no range games. If both phones are on your network, the
+        relay works - across the house or across the office.</p>
+      </div>
+      <div class="card">
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 3v6M12 15v6M3 12h6M15 12h6"/><circle cx="12" cy="12" r="3.5"/></svg></div>
+        <h3>In-call controls</h3>
+        <p>Mute, speaker, keypad and end - with the timer starting the moment the
+        other side answers.</p>
+      </div>
+      <div class="card">
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 3l7 3v5.5c0 4.4-2.9 7.6-7 9.5-4.1-1.9-7-5.1-7-9.5V6z"/><path d="M9.2 12l2 2 3.8-4"/></svg></div>
+        <h3>Nothing recorded</h3>
+        <p>Call audio passes through and is never written to a file or sent to a
+        server. Contacts and call history stay on your phone.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="plans">
+  <div class="wrap">
+    <div class="head">
+      <h2>Plans</h2>
+      <p>One account covers the relay phone and the phone you dial from.</p>
+    </div>
+    <div class="plans">
+      <div class="plan">
+        <h3>Trial</h3>
+        <p>A set number of relayed calls, so you can test the whole path before
+        choosing a plan.</p>
+      </div>
+      <div class="plan">
+        <h3>Monthly</h3>
+        <p>30 days of relay access, renewed on request. Good for a busy month.</p>
+      </div>
+      <div class="plan featured">
+        <span class="tag">Best value</span>
+        <h3>Yearly</h3>
+        <p>365 days of relay access for regular, everyday use.</p>
+      </div>
+      <div class="plan">
+        <h3>Lifetime</h3>
+        <p>Pay once and keep relay access for the life of the account.</p>
+      </div>
+    </div>
+    <p class="plans-note">
+      Plans are activated by our team after payment - the app never handles card
+      details. Relay is hidden until a plan is active; the rest of the app keeps
+      working.
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="head">
+      <h2>What you need</h2>
+    </div>
+    <div class="tiles">
+      <div class="tile">
+        <h3>Your phone</h3>
+        <p>iPhone on iOS 26.2 or later, or Android 7 or later. Signed in with the
+        Google account that holds your plan.</p>
+      </div>
+      <div class="tile">
+        <h3>A relay phone</h3>
+        <p>A rooted Android phone running the PhoneRelay relay module, with your
+        SIM cards in it, powered on and on the same Wi-Fi.</p>
+      </div>
+      <div class="tile">
+        <h3>An active plan</h3>
+        <p>Trial, monthly, yearly or lifetime. We set the relay phone up and
+        provision it to your account before you start.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt cta">
+  <div class="wrap">
+    <div class="head">
+      <h2>Want to try it?</h2>
+      <p>Tell us about your SIMs and where the phones will sit - we'll take it from there.</p>
+    </div>
+    <a class="btn" href="mailto:asfandyaralishah@rocketmail.com?subject=PhoneRelay">Email us</a>
+    <span class="num"><a href="https://wa.me/923055001343">+92 305 5001343</a></span>
+    <p class="alt-contact">Or read the <a href="support.html">support and FAQ</a> first.</p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div>
+      <div class="who">LabNexus - PhoneRelay</div>
+      <div>Calls over Wi-Fi. Nothing recorded.</div>
+    </div>
+    <div class="links">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="account-deletion.html">Delete account</a>
+      <a href="headsets.html">Audio</a>
+      <a href="support.html">Support</a>
+    </div>
+  </div>
 </footer>
 
 </body>

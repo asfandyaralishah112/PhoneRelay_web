@@ -3,81 +3,128 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Delete your PhoneRelay account</title>
-<style>
-  :root { color-scheme: light dark; }
-  body {
-    margin: 0 auto; padding: 2rem 1.25rem; max-width: 42rem;
-    font: 16px/1.6 -apple-system, "Segoe UI", Roboto, sans-serif;
-  }
-  h1 { font-size: 1.6rem; margin-bottom: .25rem; }
-  h2 { font-size: 1.15rem; margin-top: 2rem; }
-  .lead { color: #666; margin-top: 0; }
-  ol, ul { padding-left: 1.25rem; }
-  code {
-    background: rgba(128,128,128,.15); padding: .1rem .35rem; border-radius: 4px;
-  }
-  table { border-collapse: collapse; width: 100%; margin-top: .5rem; }
-  th, td { text-align: left; padding: .5rem .6rem; border-bottom: 1px solid rgba(128,128,128,.3); vertical-align: top; }
-  footer { margin-top: 2.5rem; color: #666; font-size: .9rem; }
-</style>
+<title>Delete your account - PhoneRelay</title>
+<meta name="description" content="How to delete your PhoneRelay account and everything stored with it.">
+<meta name="theme-color" content="#0CB057">
+<link rel="icon" href="assets/phonerelay-icon.png">
+<link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
 
-<h1>Delete your PhoneRelay account</h1>
-<p class="lead">PhoneRelay — <code>com.LabNexus.phonerelay</code></p>
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <img src="assets/phonerelay-icon.png" alt="">
+      <span>PhoneRelay</span>
+    </a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy</a>
+      <a class="nav-btn" href="mailto:asfandyaralishah@rocketmail.com?subject=Delete%20my%20PhoneRelay%20account">Contact</a>
+    </nav>
+  </div>
+</header>
 
-<h2>Delete it from the app</h2>
-<p>The quickest way, and it takes effect immediately:</p>
-<ol>
-  <li>Open <strong>PhoneRelay</strong>.</li>
-  <li>Go to <strong>Settings</strong> → <strong>Relay Identity</strong>.</li>
-  <li>Tap <strong>Delete account</strong> and confirm.</li>
-</ol>
+<div class="wrap">
+  <div class="page-head">
+    <h1>Delete your PhoneRelay account</h1>
+    <p>PhoneRelay - <code>com.LabNexus.phonerelay</code></p>
+  </div>
 
-<h2>Or request deletion by email</h2>
-<p>
-  If you no longer have the app installed, email
-  <strong>asfandyaralishah@rocketmail.com</strong> from the Google account you signed in with,
-  with the subject <em>Delete my PhoneRelay account</em>. Requests are actioned
-  within 30 days. We use the sending address to identify the account, so please
-  write from that address.
-</p>
+  <main class="prose">
+    <p>
+      Deleting your account removes your email address, plan and every record we hold
+      about your phones. It cannot be undone, and relay stops working on every device
+      signed in with that account.
+    </p>
 
-<h2>What is deleted</h2>
-<table>
-  <tr><th>Data</th><th>What happens</th></tr>
-  <tr>
-    <td>Your account and email address</td>
-    <td>Deleted permanently, straight away</td>
-  </tr>
-  <tr>
-    <td>The list of Bluetooth headsets authorized for your account</td>
-    <td>Deleted permanently, straight away</td>
-  </tr>
-  <tr>
-    <td>Sign-in session stored on your phone</td>
-    <td>Cleared when the account is deleted, or when you uninstall the app</td>
-  </tr>
-</table>
+    <h2>How to request deletion</h2>
+    <ol>
+      <li>Email <strong>asfandyaralishah@rocketmail.com</strong>.</li>
+      <li>Send it <strong>from the Google account you use in PhoneRelay</strong>, so
+      we can identify the account. Write from that address - we cannot action a
+      request from a different address.</li>
+      <li>Use the subject <em>Delete my PhoneRelay account</em>. Tell us whether you
+      are also stopping the relay phone, if you have one.</li>
+    </ol>
+    <p>
+      We action requests within 7 days and reply once the account is gone. If you no
+      longer have the relay phone, say so - that helps us close it cleanly.
+    </p>
 
-<h2>What was never stored</h2>
-<p>
-  Your call log, contacts, phone numbers and call audio are used only on your own
-  device, to show the dialer and to relay audio between your phones. None of it
-  is ever uploaded, so there is nothing of that kind to delete.
-</p>
+    <div class="note">
+      <p>
+        Signing out is not deletion. Signing out only clears the session on that phone;
+        your account and plan stay.
+      </p>
+    </div>
 
-<h2>After deletion</h2>
-<p>
-  SIM relay stops working on every device signed in with that account, and the
-  dialer keeps working normally. Deletion cannot be undone, but you can sign in
-  again at any time to create a new account; its authorized headsets would need
-  to be set up again.
-</p>
+    <h2>What is deleted</h2>
+    <table>
+      <tr><th>Data</th><th>What happens</th></tr>
+      <tr>
+        <td>Your account and Google email address</td>
+        <td>Deleted permanently.</td>
+      </tr>
+      <tr>
+        <td>Plan, expiry and trial usage</td>
+        <td>Deleted permanently.</td>
+      </tr>
+      <tr>
+        <td>Device records: the phone ids, platform, model and OS version, and the
+        relay module key id and fingerprint</td>
+        <td>Deleted permanently. The relay phone is unbound, so it no longer works
+        with that account.</td>
+      </tr>
+      <tr>
+        <td>Relay call records (call id, start time, duration, whether counted) and
+        diagnostics uploads</td>
+        <td>Deleted permanently.</td>
+      </tr>
+      <tr>
+        <td>The session and device token stored on your phone</td>
+        <td>Cleared when you delete the app, sign out, or delete the account.</td>
+      </tr>
+    </table>
 
-<footer>
-  Questions: asfandyaralishah@rocketmail.com
+    <h2>What was never stored</h2>
+    <p>
+      Your contacts, call history, the numbers you dial, SIM details and call audio
+      are used only on your own phones. None of it is uploaded, so there is nothing of
+      that kind for us to delete.
+    </p>
+
+    <h2>After deletion</h2>
+    <p>
+      Relay stops on every phone signed in with the account, and your relay phone is
+      released. The dialer still opens, but without a plan it cannot place relayed
+      calls. You can sign in again at any time to start a new account; a new plan and
+      a newly provisioned relay phone would be needed.
+    </p>
+
+    <h2>Questions</h2>
+    <p>
+      Write to <strong>asfandyaralishah@rocketmail.com</strong>, or see the
+      <a href="privacy.html">Privacy Policy</a> for what the service collects.
+    </p>
+  </main>
+</div>
+
+<footer class="footer">
+  <div class="wrap">
+    <div>
+      <div class="who">LabNexus - PhoneRelay</div>
+      <div>com.LabNexus.phonerelay</div>
+    </div>
+    <div class="links">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="account-deletion.html">Delete account</a>
+      <a href="support.html">Support</a>
+    </div>
+  </div>
 </footer>
 
 </body>

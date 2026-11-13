@@ -3,137 +3,214 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>PhoneRelay — Privacy Policy</title>
-<style>
-  :root { color-scheme: light dark; }
-  body {
-    margin: 0 auto; padding: 2rem 1.25rem; max-width: 42rem;
-    font: 16px/1.6 -apple-system, "Segoe UI", Roboto, sans-serif;
-  }
-  h1 { font-size: 1.6rem; margin-bottom: .25rem; }
-  h2 { font-size: 1.15rem; margin-top: 2rem; }
-  .lead { color: #666; margin-top: 0; }
-  ol, ul { padding-left: 1.25rem; }
-  code { background: rgba(128,128,128,.15); padding: .1rem .35rem; border-radius: 4px; }
-  table { border-collapse: collapse; width: 100%; margin-top: .5rem; }
-  th, td { text-align: left; padding: .5rem .6rem; border-bottom: 1px solid rgba(128,128,128,.3); vertical-align: top; }
-  footer { margin-top: 2.5rem; color: #666; font-size: .9rem; }
-</style>
+<title>Privacy Policy - PhoneRelay</title>
+<meta name="description" content="What PhoneRelay collects, what stays on your phones, and how to delete your account.">
+<meta name="theme-color" content="#0CB057">
+<link rel="icon" href="assets/phonerelay-icon.png">
+<link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
 
-<h1>Privacy Policy</h1>
-<p class="lead">
-  PhoneRelay — <code>com.LabNexus.phonerelay</code><br>
-  Last updated: 27 August 2026
-</p>
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <img src="assets/phonerelay-icon.png" alt="">
+      <span>PhoneRelay</span>
+    </a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="support.html">Support</a>
+      <a href="terms.html">Terms</a>
+      <a class="nav-btn" href="mailto:asfandyaralishah@rocketmail.com?subject=PhoneRelay%20privacy">Contact</a>
+    </nav>
+  </div>
+</header>
 
-<p>
-  PhoneRelay is a dialer that can relay calls between two of your own Android
-  phones. This policy explains what the app collects, what it deliberately does
-  not, and how to delete what it holds.
-</p>
+<div class="wrap">
+  <div class="page-head">
+    <h1>Privacy Policy</h1>
+    <p>PhoneRelay - <code>com.LabNexus.phonerelay</code> - last updated 13 November 2026</p>
+  </div>
 
-<h2>What we collect</h2>
-<p>
-  Only what an account needs. Signing in is optional — the dialer works without
-  it — and is required only for the SIM relay feature.
-</p>
-<table>
-  <tr><th>Data</th><th>Why</th><th>Shared?</th></tr>
-  <tr>
-    <td><strong>Email address</strong> of the Google account you sign in with</td>
-    <td>Identifies your account and determines which Bluetooth headsets are authorized for it</td>
-    <td>No</td>
-  </tr>
-  <tr>
-    <td><strong>Account identifier</strong> created when you first sign in</td>
-    <td>Identifies your account on our server</td>
-    <td>No</td>
-  </tr>
-</table>
-<p>
-  That is the complete list. There is no analytics, no advertising, no
-  advertising ID, and no tracking of any kind in this app.
-</p>
+  <main class="prose">
+    <p>
+      PhoneRelay relays calls from a relay phone that holds your SIM cards to the
+      iPhone or Android phone you carry. This policy explains what the app and our
+      service collect, what they deliberately do not, and how to delete what we hold.
+    </p>
 
-<h2>What stays on your phone</h2>
-<p>
-  PhoneRelay uses several sensitive permissions. The data behind them is used on
-  the device and is <strong>never uploaded to us or to anyone else</strong>:
-</p>
-<table>
-  <tr><th>Data</th><th>Used for</th></tr>
-  <tr><td>Call log</td><td>Showing recent calls, and recording calls made through the paired phone so your history is complete</td></tr>
-  <tr><td>Contacts</td><td>Showing the caller's name instead of a bare number</td></tr>
-  <tr><td>Phone numbers and SIM details</td><td>Choosing which SIM places a call</td></tr>
-  <tr><td>Microphone audio</td><td>Relaying live call audio between your two phones. It is never recorded, stored or transmitted to a server</td></tr>
-  <tr><td>Bluetooth device addresses</td><td>Checking whether a connected headset is authorized for your account</td></tr>
-  <tr><td>Approximate location permission (Android 11 and older only)</td><td>Required by those Android versions to scan for Bluetooth devices. Your location is never read, used or collected</td></tr>
-</table>
+    <div class="note">
+      <p>
+        <strong>In short:</strong> we hold the email address of the Google account
+        you sign in with, your plan, identifiers for the two phones, a record of
+        relayed calls (time and length, not the number dialled) and technical
+        diagnostics. Your contacts, call history, SIM details and call audio stay
+        on your own phones.
+      </p>
+    </div>
 
-<h2>Data shared between your two phones</h2>
-<p>
-  When you pair two phones, each sends the other a short identifier derived from
-  your account so that only devices signed into the same account will link. This
-  travels directly between your phones over Bluetooth and does not pass through
-  us.
-</p>
+    <h2>What we collect</h2>
+    <table>
+      <tr>
+        <th>Data</th>
+        <th>Why we have it</th>
+      </tr>
+      <tr>
+        <td><strong>Google account email address</strong>, and the account id our
+        authentication provider creates for it</td>
+        <td>This is your account. It identifies which plan belongs to you and which
+        relay phone is bound to it. Sign-in itself is handled by Google; we never
+        see your password.</td>
+      </tr>
+      <tr>
+        <td><strong>Phone identifiers</strong>: a random device id created on first
+        sign-in, the platform (iOS or Android), and your device model and OS
+        version</td>
+        <td>To enforce one relay phone per account, recognise your phone on later
+        launches, and investigate sign-in or relay problems.</td>
+      </tr>
+      <tr>
+        <td><strong>Relay phone identifiers</strong>: the key id of the relay module
+        and a fingerprint of the relay phone it runs on</td>
+        <td>To bind the relay phone to your account and to detect a copied or cloned
+        relay module, which protects your account.</td>
+      </tr>
+      <tr>
+        <td><strong>Plan and relay usage</strong>: plan type, start and expiry,
+        trial calls used, and one record per relayed call containing a random call
+        id, the start time, the duration, and whether the call counted against the
+        plan</td>
+        <td>To run the plan, charge trial calls and answer billing and support
+        questions. Call records do not contain the number dialled, the contact, or
+        any audio.</td>
+      </tr>
+      <tr>
+        <td><strong>Technical diagnostics</strong>, uploaded when something fails:
+        app version and build, OS version, device model, connection state, error
+        messages and recent in-app log lines</td>
+        <td>To find and fix faults. Uploads are rate limited, are not continuous,
+        and are never used for advertising. A log line can include a phone number or
+        a local network address when that is the thing that failed.</td>
+      </tr>
+      <tr>
+        <td><strong>IP address</strong>, seen by our database provider when the app
+        makes a request</td>
+        <td>To deliver the request and protect the service from abuse. We do not
+        store it as part of your account.</td>
+      </tr>
+    </table>
+    <p class="muted small">
+      That is the complete list. PhoneRelay has no advertising, no analytics SDK, no
+      advertising identifier and no third-party tracking.
+    </p>
 
-<h2>Who processes your data</h2>
-<ul>
-  <li><strong>Google</strong> — handles the sign-in itself. We receive your
-      email address from it; we never see your Google password.</li>
-  <li><strong>Supabase</strong> — hosts the database holding your email address,
-      account identifier, and the list of headsets authorized for your account.</li>
-</ul>
-<p>
-  These are service providers acting on our behalf. We do not sell your data or
-  share it with third parties for their own purposes.
-</p>
+    <h2>What stays on your phones</h2>
+    <p>
+      Several permissions are needed to make and show calls. The data behind them is
+      used on the device and is <strong>never uploaded to us or anyone else</strong>:
+    </p>
+    <table>
+      <tr><th>Data</th><th>Used for</th></tr>
+      <tr><td>Contacts</td><td>Showing names instead of bare numbers in the dialer and call screen.</td></tr>
+      <tr><td>Call history</td><td>Showing recents, and adding calls made through the relay phone so your history is complete.</td></tr>
+      <tr><td>Phone numbers you dial</td><td>Placing the call through the relay phone. They are not sent to our servers.</td></tr>
+      <tr><td>SIM details</td><td>Letting you choose which SIM in the relay phone places the call.</td></tr>
+      <tr><td>Microphone audio and call audio</td><td>Carrying your voice and the other side's voice during a relayed call. Audio is never recorded, stored or sent to a server.</td></tr>
+      <tr><td>Local network address of the relay phone</td><td>Connecting to it over your Wi-Fi. It stays on your network.</td></tr>
+    </table>
 
-<h2>Security and retention</h2>
-<p>
-  All traffic between the app and our server is encrypted in transit using
-  HTTPS. Sign-in tokens are stored in the app's private storage on your phone and
-  are excluded from cloud backup and device transfer.
-</p>
-<p>
-  Your account is kept until you delete it. Deleting it removes the data
-  immediately.
-</p>
+    <h2>What we never do</h2>
+    <ul>
+      <li>We do not record calls, and we cannot listen to them.</li>
+      <li>We do not read or upload your contacts, messages or call history.</li>
+      <li>We do not use the microphone in the background.</li>
+      <li>We do not sell your data, and we do not share it for advertising.</li>
+    </ul>
 
-<h2>Deleting your data</h2>
-<p>
-  In the app: <strong>Settings → Relay Identity → Delete account</strong>. Or see
-  <a href="account-deletion.html">the account deletion page</a>, which also
-  covers requesting deletion by email if you no longer have the app installed.
-</p>
-<p>
-  Signing out clears the session on that phone but keeps your account. Deleting
-  the account removes your email address, your account identifier, and the list
-  of headsets authorized for it.
-</p>
+    <h2>Who processes your data</h2>
+    <ul>
+      <li><strong>Google</strong> - handles sign-in. We receive your email address and
+      account id from Google; Google never receives your contacts or call audio from us.</li>
+      <li><strong>Supabase</strong> - hosts the database and authentication service that
+      store your account, plan, device records, call records and diagnostics.</li>
+    </ul>
+    <p>
+      These are service providers acting on our behalf. We may also disclose data
+      where the law requires it, or to protect the service and its users from abuse.
+      Data may be processed in countries other than yours by these providers.
+    </p>
 
-<h2>Children</h2>
-<p>
-  PhoneRelay is not directed at children and is intended for users aged 18 and
-  over. We do not knowingly collect data from children.
-</p>
+    <h2>Security</h2>
+    <p>
+      All traffic between the app and our server uses HTTPS. Each phone holds a device
+      token after sign-in; the server stores only a hash of that token. The database
+      tables are not reachable from the app directly - every read and write goes
+      through a small set of functions that check the token first. Sign-in tokens are
+      kept in the app's private storage.
+    </p>
 
-<h2>Changes</h2>
-<p>
-  If this policy changes, the date at the top will be updated. Material changes
-  will be noted in the app's release notes.
-</p>
+    <h2>Retention</h2>
+    <p>
+      Your account, plan, device records, call records and diagnostics are kept until
+      you delete your account. Diagnostics are uploaded only when there is something
+      to report and are limited per device per hour.
+    </p>
 
-<h2>Contact</h2>
-<p>
-  Questions about this policy or your data: <strong>asfandyaralishah@rocketmail.com</strong>
-</p>
+    <h2>Deleting your data</h2>
+    <p>
+      Email <strong>asfandyaralishah@rocketmail.com</strong> from the Google account
+      you signed in with, with the subject <em>Delete my PhoneRelay account</em>.
+      Requests are actioned within 7 days, and usually much sooner. See
+      <a href="account-deletion.html">the account deletion page</a> for the exact
+      steps and for what is removed.
+    </p>
+    <p>
+      Deleting the account removes your email address, plan, device records, call
+      records and diagnostics. Relay stops working on every phone signed in with that
+      account. Signing out, by contrast, only clears the session on that phone.
+    </p>
 
-<footer>
-  PhoneRelay · com.LabNexus.phonerelay
+    <h2>Your rights</h2>
+    <p>
+      You can ask us for a copy of the data we hold about your account, ask us to
+      correct it, or ask us to delete it. Write to the address above from the email
+      address on the account. We answer within 30 days.
+    </p>
+
+    <h2>Children</h2>
+    <p>
+      PhoneRelay is not directed at children and is intended for users aged 18 and
+      over. We do not knowingly collect data from children.
+    </p>
+
+    <h2>Changes</h2>
+    <p>
+      If this policy changes, the date at the top will be updated. Material changes
+      will be noted in the app's release notes.
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+      Questions about this policy or your data:
+      <strong>asfandyaralishah@rocketmail.com</strong>
+    </p>
+  </main>
+</div>
+
+<footer class="footer">
+  <div class="wrap">
+    <div>
+      <div class="who">LabNexus - PhoneRelay</div>
+      <div>com.LabNexus.phonerelay</div>
+    </div>
+    <div class="links">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="account-deletion.html">Delete account</a>
+      <a href="support.html">Support</a>
+    </div>
+  </div>
 </footer>
 
 </body>
